@@ -1,0 +1,35 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    max-width: 2000px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-person{
+    width: 40px;
+    height: 40px;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+

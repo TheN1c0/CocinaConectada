@@ -3,136 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu deliciosos</title>
-     <!-- Enlazar Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Enlazar Bootstrap JS y jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body>
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sandwiches deliciosos</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="PaginaInicio.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Menú</a>
-        </li>
-        <li class="nav-item">
-            <a href="PaginaCompra.html" class="nav-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg>
-            </a>
-          </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person" viewBox="0 0 16 16">
-              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-<!-- Cards de sandwiches -->
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <!-- Precio para los sandwiches-->
-          <h6 class="card-title text-center mt-2">$6.890</h6>
-          <img src="sandwich_pollo.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sandwich de pollo</h5>
-            <p class="card-text">Delicioso sandwich de pollo con lechuga, tomate y mayonesa.</p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary">Agregar al Carro</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <h6 class="card-title text-center mt-2">$3.490</h6>
-          <img src="sandwiches_vegano.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sandwich vegetariano</h5>
-            <p class="card-text">Sabroso sandwich vegetariano con aguacate, tomate, pepinillo, lechuga y repollo.</p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary">Agregar al Carro</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <h6 class="card-title text-center mt-2">$8.990</h6>
-          <img src="sandwich_carne.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sandwich de roast beef</h5>
-            <p class="card-text">Exquisito sandwich de roast beef con cebolla caramelizada y mostaza.</p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary">Agregar al Carro</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <h6 class="card-title text-center mt-2">$5.300</h6>
-          <img src="sandwich_cubano.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sandwich cubano</h5>
-            <p class="card-text">Delicioso sandwich de Jamon de Cerdo, Jamonada, Cordero, Queso Mozzarella, Lechuga y Salsa cubana.</p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary">Agregar al Carro</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <h6 class="card-title text-center mt-2">$4.190</h6>
-          <img src="sandwich_palta_bacan.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sandwich de aguacate y quesos con bacon de pavo</h5>
-            <p class="card-text">Sabroso sandwich de aguacate, queso y bacon de pavo.</p>
-            <div class="text-center">
-              <a href="#" class="btn btn-primary">Agregar al Carro</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <h6 class="card-text text-center">$2.500</h6>
-          <img src="sandwich_atun.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Sandwich de Atun</h5>
-            <p class="card-text">Exquisito sandwich de atun, cebolla morada y mayonesa.</p>
-            <div class="text-center">
-            <a href="#" class="btn btn-primary">Agregar al Carro</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <header>
+        <h1>Sandwiches Deliciosos</h1>
+        <nav class="d-flex justify-content-end align-items-center">
+            <div class="container-icon">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand mr-2" href="PaginaInicio.html">Inicio</a>
+                    <a class="navbar-brand mr-2" href="PaginaMeno.html">Menu</a>
+                    <div>
+                    </div>
+                <div class="container-cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-cart" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                    </svg>
+                </div>
+                </div>   
+                
+             
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product">
+                        <div class="cart-product">
+                            <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito"></span>
+                                <div class="titulo-producto-carrito"></div>
+                                <span class="precio-producto-carrito"></span>
     
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-close" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </div>
+                    </div>
+               
+                    <div class="cart-total hidden">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$0</span>
+                    </div>
+                    <p class="cart-empty">El carrito está vacío</p>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="sandwich_pollo.png" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Sandwich de Pollo</h2>
+                <p class="desc">Delicioso sandwich de pollo con lechuga, tomate y mayonesa.</p>
+                <h5 class="price text-center mt-2">$6.890</h5>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="sandwiches_vegano.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Sandwich Vegetariano</h2>
+                <p class="desc">Sabroso sandwich vegetariano con aguacate, tomate, pepinillo, lechuga y repollo.</p>
+                <h5 class="price text-center mt-2">$3.490</h5>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="sandwich_carne.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Sandwich de roast beef</h2>
+                <p class="desc">Exquisito sandwich de roast beef con cebolla caramelizada y mostaza.</p>
+                <h5 class="price text-center mt-2">$8.990</h5>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="sandwich_cubano.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Sandwich Cubano</h2>
+                <p class="desc">Delicioso sandwich de Jamon de Cerdo, Jamonada, Cordero, Queso Mozzarella, Lechuga y Salsa cubana.</p>
+                <h5 class="price text-center mt-2">$5.300</h5>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="sandwich_palta_bacan.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Sandwich de aguacate y quesos con bacon de pavo</h2>
+                <p class="desc">Sabroso sandwich de aguacate, queso y bacon de pavo.</p>
+                <h5 class="price text-center mt-2">$4.190</h5>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="sandwich_atun.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Sandwich de Atun</h2>
+                <p class="desc">Exquisito sandwich de atun, cebolla morada y mayonesa.</p>
+                <h5 class="price text-center mt-2">$2.500</h5>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="carro.js"></script>
 </body>
 </html>
