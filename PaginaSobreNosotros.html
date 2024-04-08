@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más sobre nosotros</title>
+    <!-- Enlazar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlazar Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            padding: 10px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 100px 0;
+            margin-bottom: auto; /* Esto hace que la jumbotron se pegue al fondo */
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+            margin-bottom: 40px;
+        }
+        .jumbotron p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        /* Estilo para la imagen de fondo */
+        .footer-background {
+            background-image: url('sandwich1.jpg'); 
+            background-size: cover;
+            background-position: center 40%;
+            background-repeat: no-repeat;
+            height: 300px;  
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sandwiches Deliciosos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="PaginaInicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PaginaMeno.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a href="PaginaCompra.html" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!-- Aquí está el enlace para "Más sobre nosotros" -->
+                    <a href="PaginaSobreNosotros.html" class="nav-link">Más sobre nosotros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página "Más sobre nosotros" -->
+    <div class="jumbotron text-center">
+        <h1 class="display-3 text-center">Más sobre nosotros</h1>
+        <p class="lead text-center">¡Bienvenidos a nuestra tienda de sandwiches deliciosos! Somos un equipo apasionado por la comida y nos esforzamos por ofrecer los mejores sandwiches con ingredientes frescos y de alta calidad.</p>
+        <hr class="my-4">
+        <p class="text-center">Nuestra misión es satisfacer a nuestros clientes con sabores únicos y una experiencia culinaria excepcional. En nuestra tienda, encontrarás una amplia variedad de opciones, desde sandwiches clásicos hasta creaciones innovadoras.</p>
+    </div>
+
+    <!-- Imagen de fondo -->
+    <div class="footer-background"></div>
+
+</body>
+</html>
