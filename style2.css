@@ -33,3 +33,26 @@ header{
     padding: 30px;
 }
 
+nav h1{
+    color: white;
+}
+
+nav a.navbar-brand {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar subrayado de los enlaces si lo hubiera */
+  }
+
+nav .icon-person {
+fill: white; /* Color del icono de persona */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    padding: 20px 0; /* Espaciado interno del pie de página */
+}
+
+footer a {
+    color: white; /* Color del enlace del pie de página */
+}
+

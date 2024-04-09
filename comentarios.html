@@ -4,25 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios</title>
+    <link rel="stylesheet" href="comentarios.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .comment-container {
-            width: 80%;
-            margin: 20px auto;
-        }
-        .comment {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        .comment-actions {
-            margin-top: 5px;
-        }
-        .like-btn, .dislike-btn {
-            cursor: pointer;
-            margin-right: 10px;
-        }
-    </style>
+
 </head>
 <body>
     
@@ -63,12 +47,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
+                    <h5>Información de contacto</h5>
+                    <p>Dirección: Avenida Siempre Viva, 123 </p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Correo electrónico: correoepicgames9@gmail.com</p>
+                </div>
+                <div class="col-md-6">
                     <h5>Enlaces útiles</h5>
                     <ul class="list-unstyled">
                         <li><a href="PaginaInicio.html">Inicio</a></li>
-                        <li><a href="#">Más sobre nosotros</a></li>
+                        <li><a href="PaginaSobreNosotros.html">Más sobre nosotros</a></li>
                         <li><a href="PaginaMeno.html">Servicios</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Comentarios</a></li>
                     </ul>
                 </div>
             </div>
@@ -82,54 +72,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        // Array 
-        var comments = [
-            { text: "¡Me encanta este sitio!", likes: 0, dislikes: 0 },
-            { text: "La comida es deliciosa.", likes: 0, dislikes: 0 },
-            { text: "No me gustó la atención al cliente.", likes: 0, dislikes: 0 }
-        ];
-
-        // Función 
-        function displayComments() {
-            var commentsHTML = "";
-            comments.forEach(function(comment, index) {
-                commentsHTML += "<div class='comment'>" + comment.text +
-                                "<div class='comment-actions'>" +
-                                "<span class='like-btn' onclick='likeComment(" + index + ")'>👍 (" + comment.likes + ")</span>" +
-                                "<span class='dislike-btn' onclick='dislikeComment(" + index + ")'>👎 (" + comment.dislikes + ")</span>" +
-                                "</div></div>";
-            });
-            document.getElementById("comments").innerHTML = commentsHTML;
-        }
-
-        //  nuevo comentario
-        function addComment() {
-            var newCommentText = document.getElementById("new-comment").value;
-            if (newCommentText.trim() !== "") {
-                comments.push({ text: newCommentText, likes: 0, dislikes: 0 });
-                displayComments();
-                document.getElementById("new-comment").value = ""; // Limpiar el campo de texto
-            } else {
-                alert("Por favor escribe un comentario antes de agregarlo.");
-            }
-        }
-
-        
-        function likeComment(index) {
-            comments[index].likes++;
-            displayComments();
-        }
-
-        
-        function dislikeComment(index) {
-            comments[index].dislikes++;
-            displayComments();
-        }
-
-        
-        displayComments();
-    </script>
+    <script src="comentarios.js"></script>
 </body>
 </html>
