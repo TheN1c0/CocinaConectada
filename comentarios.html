@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .comment-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .comment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .comment-actions {
+            margin-top: 5px;
+        }
+        .like-btn, .dislike-btn {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sandwiches Deliciosos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="PaginaInicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PaginaMeno.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container comment-container">
+        <h2>Comentarios</h2>
+        <div id="comments">
+            
+        </div>
+        <hr>
+        <h3>Agregar un nuevo comentario</h3>
+        <textarea id="new-comment" rows="4" class="form-control" placeholder="Escribe tu comentario aquí"></textarea><br>
+        <button onclick="addComment()" class="btn btn-primary">Agregar Comentario</button>
+    </div>
+
+    
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="PaginaInicio.html">Inicio</a></li>
+                        <li><a href="#">Más sobre nosotros</a></li>
+                        <li><a href="PaginaMeno.html">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Sandwiches Deliciosos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Array 
+        var comments = [
+            { text: "¡Me encanta este sitio!", likes: 0, dislikes: 0 },
+            { text: "La comida es deliciosa.", likes: 0, dislikes: 0 },
+            { text: "No me gustó la atención al cliente.", likes: 0, dislikes: 0 }
+        ];
+
+        // Función 
+        function displayComments() {
+            var commentsHTML = "";
+            comments.forEach(function(comment, index) {
+                commentsHTML += "<div class='comment'>" + comment.text +
+                                "<div class='comment-actions'>" +
+                                "<span class='like-btn' onclick='likeComment(" + index + ")'>👍 (" + comment.likes + ")</span>" +
+                                "<span class='dislike-btn' onclick='dislikeComment(" + index + ")'>👎 (" + comment.dislikes + ")</span>" +
+                                "</div></div>";
+            });
+            document.getElementById("comments").innerHTML = commentsHTML;
+        }
+
+        //  nuevo comentario
+        function addComment() {
+            var newCommentText = document.getElementById("new-comment").value;
+            if (newCommentText.trim() !== "") {
+                comments.push({ text: newCommentText, likes: 0, dislikes: 0 });
+                displayComments();
+                document.getElementById("new-comment").value = ""; // Limpiar el campo de texto
+            } else {
+                alert("Por favor escribe un comentario antes de agregarlo.");
+            }
+        }
+
+        
+        function likeComment(index) {
+            comments[index].likes++;
+            displayComments();
+        }
+
+        
+        function dislikeComment(index) {
+            comments[index].dislikes++;
+            displayComments();
+        }
+
+        
+        displayComments();
+    </script>
+</body>
+</html>
