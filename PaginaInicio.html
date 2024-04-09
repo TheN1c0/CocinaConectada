@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
-    <LINk rel="stylesheet" href="style2.css"> </LINk>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
-      body {
+        
+        body {
+            background-color: #fff;
+        }
+        
+        .carousel-item img {
+            max-height: 480px; 
+            width: auto; 
+        }
+        #carouselExampleControls {
+            max-width: 2000px; 
+            margin: 0 auto; 
+        }
+       
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%; 
+        }
+    
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            margin-top: -15px; 
+        }
+    </style>
+    <style>
+      body{
         background-image: url('FondoTienda.jpg');
-        background-size: cover; /* Para ajustar la imagen al tamaño de la ventana */
-        background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     </style>
-    <style>
-      nav {
-        background-color: rgba(0, 0, 0, 0); /* Color de fondo de la barra de búsqueda */
-      }
-    </style>
-
-
-
-
 </head>
 <body>
-
 
   <nav class="d-flex justify-content-between align-items-center px-3 py-2">
     <h1>Sandwiches Deliciosos</h1>
@@ -43,10 +53,11 @@
         </div>
     </div>
   </nav>
+  
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-12">
-        <div id="carouselExampleControls" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 1500px;">
+      <div class="col-md-10">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="sandwich1.jpg" class="d-block w-100" alt="...">
@@ -70,36 +81,36 @@
       </div>
     </div>
   </div>
-    
-    
-    
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Información de contacto</h5>
-              <p>Dirección: Avenida Siempre Viva, 123 </p>
-              <p>Teléfono: (123) 456-7890</p>
-              <p>Correo electrónico: correoepicgames9@gmail.com</p>
-            </div>
-
-            <div class="col-md-6">
-              <h5>Enlaces útiles</h5>
-              <ul class="list-unstyled">
-                <li><a href="PaginaInicio.html">Inicio</a></li>
-                <li><a href="PaginaSobreNosotros.html">Mas Sobre Nosotros</a></li>
-                <li><a href="comentarios.html">Comentarios</a></li>
-                <li><a href="PaginaMeno.html">Servicios</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
-          <div class="text-center">
-            <p>&copy; 2024 Sandwiches Delicioso</p>
-          </div>
+  
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Información de contacto</h5>
+          <p>Dirección: Avenida Siempre Viva, 123 </p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Correo electrónico: correoepicgames9@gmail.com</p>
         </div>
-      </footer>
+        <div class="col-md-6">
+          <h5>Enlaces útiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="PaginaInicio.html">Inicio</a></li>
+            <li><a href="PaginaSobreNosotros.html">Mas Sobre Nosotros</a></li>
+            <li><a href="comentarios.html">Comentarios</a></li>
+            <li><a href="PaginaMeno.html">Servicios</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2024 Sandwiches Delicioso</p>
+      </div>
+    </div>
+  </footer>
 
-    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

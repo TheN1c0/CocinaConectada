@@ -208,3 +208,26 @@ header{
 }
 
 
+.carousel-item img {
+    max-height: 480px;
+    width: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: none; 
+    margin-top: 60px;
+}
+
+
+.icon-person{
+    width: 40px;
+    height: 40px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; 
+    color: white; 
+    padding: 20px 0; 
+}
