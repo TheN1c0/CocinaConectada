@@ -1,0 +1,78 @@
+/*globales*/
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 2000px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.search-form{
+    display: flex;
+    
+}
+
+#navbar-title{
+    font-size: 40px;
+}
+
+
+
+#carouselExampleControls {
+    width: 2000px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-item{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+
+nav h1{
+    color: #000 ;
+}
+
+nav a{
+    color:  #000;
+}
+
+.carousel-item img {
+    max-height: 480px;
+    width: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: none; 
+    margin-top: 60px;
+}
+
+.icon-person{
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; 
+    color: white; 
+    padding: 20px 0; 
+}

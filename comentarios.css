@@ -1,3 +1,27 @@
+/*globales*/
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 2000px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+nav a{
+    color: #000;
+}
+
+#navbar-title{
+    font-size: 40px;
+}
+
 .comment-container {
     width: 80%;
     margin: 20px auto;
