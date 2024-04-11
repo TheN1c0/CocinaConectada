@@ -29,10 +29,17 @@ img{
     max-width: 100%;
 }
 
+ #bebidas {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    width: 9500px;
+    height: 700px;
+ }
 nav{
     display: flex;
     justify-content: space-between;
     padding: 30px 0 40px 0;
+
 }
 
 nav h1{
@@ -219,4 +226,15 @@ nav a{
 
 .hidden{
     display: none;
+}
+
+.discounted-price {
+    color: red; 
+    font-weight: 900;
+}
+
+#discounted {
+    text-decoration: line-through;
+    text-decoration-color: red; /* Color rojo para la línea de tachado */
+    text-decoration-thickness: 2px; /* Grosor de la línea de tachado */
 }
