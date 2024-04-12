@@ -240,8 +240,8 @@ nav a{
 
 #discounted {
     text-decoration: line-through;
-    text-decoration-color: red; /* Color rojo para la línea de tachado */
-    text-decoration-thickness: 2px; /* Grosor de la línea de tachado */
+    text-decoration-color: red; 
+    text-decoration-thickness: 2px;
 }
 
 .estampado {
@@ -259,7 +259,7 @@ nav a{
 
 #aperitivos{
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
     width: 9500px;
     height: 700px;
 }
